@@ -1,0 +1,48 @@
+{
+    "name": "multimedia-street/fields",
+    "type": "library",
+    "description": "Fields Packages.",
+    "keywords": [
+        "multimedia-street",
+        "fields"
+    ],
+    "homepage": "https://github.com/multimedia-street/fields",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Are Galinada",
+            "email": "jayaregalinada@multimedia-street.com",
+            "homepage": "http://jayaregalinada.github.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9|~7.0",
+        "illuminate/support": ">=5.1",
+        "illuminate/database": ">=5.1",
+        "doctrine/dbal": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mmstreet\\Fields\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mmstreet\\Fields\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
